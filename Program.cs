@@ -4,59 +4,68 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Problema55.Tecla_valor
 {
     class Program
     {
-        public class TriRec
+        static void Main(string[] args)
         {
-            private double Hipo, Cat1, Cat2, Sin, Cos, Tan, An;
+            int tecla, i, j, tempT, tempV;
+            int[,] Teclas_Valores = new int[10, 2];
 
-            public TriRec(double hipo, double cat1, double cat2)
+            Console.WriteLine("-INSERTA NÚMEROS POR TECLADO-\n");
+            for (i = 0; i < 10; i++)
             {
-                Hipo = hipo;
-                Cat1 = cat1;
-                Cat2 = cat2;
+                Console.Write("{0}-Valor por tecla: ", (i + 1)); tecla = Convert.ToInt16(Console.ReadLine());
+                Teclas_Valores[i, 0] = tecla;
+
+                if (Teclas_Valores[i, 0] == 2)
+                    Teclas_Valores[i, 1] = 14;
+                if (Teclas_Valores[i, 0] == 6)
+                    Teclas_Valores[i, 1] = 301;
+                if (Teclas_Valores[i, 0] == 32)
+                    Teclas_Valores[i, 1] = 1632;
+                if (Teclas_Valores[i, 0] == 4)
+                    Teclas_Valores[i, 1] = 171;
+                if (Teclas_Valores[i, 0] == 11)
+                    Teclas_Valores[i, 1] = 6321;
+                if (Teclas_Valores[i, 0] == 1)
+                    Teclas_Valores[i, 1] = 148;
+                if (Teclas_Valores[i, 0] == 15)
+                    Teclas_Valores[i, 1] = 7;
+                if (Teclas_Valores[i, 0] == 9)
+                    Teclas_Valores[i, 1] = 23;
+                if (Teclas_Valores[i, 0] == 25)
+                    Teclas_Valores[i, 1] = 666;
+                if (Teclas_Valores[i, 0] == 17)
+                    Teclas_Valores[i, 1] = 31;
             }
 
-            public void Angulos()
+            for (i = 0; i < 10; i++)
             {
-                Sin = Cat1 / Hipo;
-                Cos = Cat2 / Hipo;
-                Tan = Cat1 / Cat2;
-                An = Math.Asin(Sin);
+                for (j = 0; j < 9; j++)
+                {
+                    if (Teclas_Valores[j, 0] > Teclas_Valores[(j + 1), 0])
+                    {
+                        tempT = Teclas_Valores[(j + 1), 0];
+                        tempV = Teclas_Valores[(j + 1), 1];
+                        Teclas_Valores[(j + 1), 0] = Teclas_Valores[j, 0];
+                        Teclas_Valores[(j + 1), 1] = Teclas_Valores[j, 1];
+                        Teclas_Valores[j, 0] = tempT;
+                        Teclas_Valores[j, 1] = tempV;
+                    }
+                }
             }
 
-            public void DesplegarTriRec()
+            Console.WriteLine("\n-DESPLIEGUE DE TABLA-\n");
+            for (i = 0; i < 10; i++)
             {
-                Console.WriteLine("\n-DATOS DE UN TRIÁNGULO RECTÁNGULO-\n");
-                Console.WriteLine("Cateto 1: {0}", Cat1);
-                Console.WriteLine("Cateto 2: {0}", Cat2);
-                Console.WriteLine("Hipotenusa: {0}", Hipo);
-                Console.WriteLine("Ángulo del cateto: {0}", An);
-                Console.WriteLine("Seno del ángulo: {0}", Sin);
-                Console.WriteLine("Coseno del ángulo: {0}", Cos);
-                Console.WriteLine("Tangente del ángulo: {0}", Tan);
+                for (j = 0; j < 2; j++)
+                {
+                    Console.Write(Teclas_Valores[i, j] + " - ");
+                }
+                Console.WriteLine();
             }
-
-            ~TriRec() { }
-        }
-
-        public static void Main(string[] args)
-        {
-            double Hipo, Cat1, Cat2;
-
-            TriRec triarect;
-
-            Console.WriteLine("-DATOS DE UN TRIÁNGULO RECTÁNGULO-\n");
-            Console.Write("Hipotenusa: "); Hipo = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Cateto: "); Cat1 = Convert.ToDouble(Console.ReadLine());
-
-            Cat2 = Math.Sqrt(Math.Pow(Hipo, 2) - Math.Pow(Cat1, 2));
-
-            triarect = new TriRec(Hipo, Cat1, Cat2);
-            triarect.Angulos();
-            triarect.DesplegarTriRec();
 
             Console.ReadKey();
         }
