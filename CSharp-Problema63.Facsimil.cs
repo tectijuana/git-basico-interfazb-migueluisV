@@ -5,7 +5,7 @@
 //introducirá al beneficiario, la fecha, el girador, el nombre del banco, la
 //dirección del banco, los números de tránsito, el número de cheque y el importe
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //16 de marzo del 2022
 
 namespace Problema63.Facsimil
