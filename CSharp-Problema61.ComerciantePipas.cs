@@ -8,7 +8,7 @@
 //1. Calcular las ganancias en cada uno de los precios en este rango y escoger
 //el que dé la ganancia máxima.
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //16 de marzo del 2022
 
 namespace Problema61.ComerciantePipas
