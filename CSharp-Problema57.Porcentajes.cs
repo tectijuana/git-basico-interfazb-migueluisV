@@ -4,7 +4,7 @@
 //Hacer un programa que facilite al estudiante la solución
 //de problemas de porcentajes
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //11 de marzo del 2022
 
 namespace Problema57.Porcentajes
