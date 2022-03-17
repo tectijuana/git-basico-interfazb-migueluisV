@@ -9,7 +9,7 @@
 //minará los salarios acumulativos despuéa de cada mes y, de esa información
 //decidirá cuál método de pago es mejor
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //16 de marzo del 2022
 
 namespace Problema60.Salario
