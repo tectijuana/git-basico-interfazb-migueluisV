@@ -12,7 +12,7 @@
 //M     12  22  8           M   4.95    4.95    5.25
 //G     7   3   4           G   5.45    5.95    6.5
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //16 de marzo del 2022
 
 namespace Problema59.Almacen
