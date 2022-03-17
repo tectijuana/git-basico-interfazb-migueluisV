@@ -6,7 +6,7 @@
 //salarios anuales de sus empleados son: $12,000, $14,000, $9,000, $6,500, $10,400,
 //8,200.
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //16 de marzo del 2022
 
 namespace Problema64.BonoOctavoSalario
