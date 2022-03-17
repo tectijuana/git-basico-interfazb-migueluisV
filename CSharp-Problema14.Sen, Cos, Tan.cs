@@ -5,7 +5,7 @@
 //de un triángulo rectángulo. Determinar el seno, coseno
 //y tangente de cualquera de los ángulos agudos
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //11 de marzo del 2022
 
 namespace ConsoleApp1
