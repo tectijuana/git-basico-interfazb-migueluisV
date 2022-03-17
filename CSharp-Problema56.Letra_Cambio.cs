@@ -6,7 +6,7 @@
 //el costo de compras realizadas y sustraer un cargo financiero mensual del 1.5%
 //sobre el balance no pagado.
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //11 de marzo del 2022
 
 namespace Problema56.Letra_Cambio
