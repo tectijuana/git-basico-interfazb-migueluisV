@@ -16,7 +16,7 @@
 //25     |666
 //17     |31
 
-//Miguel Villegas Luis Enrique
+//Miguel Villegas Luis Enrique; migueluisV
 //11 de marzo del 2022
 
 namespace Problema55.Tecla_valor
