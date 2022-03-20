@@ -20,4 +20,6 @@ int main()
     Bono = Salario / 8;
 
     std::cout << "\nEl salario m" << char(160) << "s bono del empleado es de: $" << std::to_string(Salario + Bono);
+    
+    return 0;
 }
