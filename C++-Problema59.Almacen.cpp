@@ -70,4 +70,6 @@ void IngresarDatos()
 int main()
 {
     IngresarDatos();
+    
+    return 0;
 }
