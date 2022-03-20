@@ -51,4 +51,6 @@ int main()
     Facsimil facsimil;
     facsimil.GenerarDatosFacsimil();
     facsimil.GenerarFacsimil();
+    
+    return 0;
 }
