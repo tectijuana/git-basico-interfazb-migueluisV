@@ -182,4 +182,6 @@ int main()
     system("pause");
     letracambio.ValoresCarta();
     letracambio.GenerarCarta();
+    
+    return 0;
 }
