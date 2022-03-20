@@ -30,4 +30,6 @@ int main()
     }
     std::cout << "La mayor ganancia en todo el rango de precios es: $" << std::to_string(MaxGanancia) << " con precio de $" << std::to_string(MejorPrecio) << "\n";
     system("pause");
+    
+    return 0;
 }
