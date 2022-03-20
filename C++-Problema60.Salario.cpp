@@ -69,4 +69,6 @@ void DesplegarSalario(double aumento)
 int main()
 {
     Menu();
+    
+    return 0;
 }
